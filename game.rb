@@ -1,7 +1,7 @@
 class Game
   attr_reader :multiplayer, :last_played_at
 
-  def initialize(multiplayer = false, last_played_at = Time.new)
+  def initialize(multiplayer, last_played_at = Time.new)
     @multiplayer = multiplayer
     @last_played_at = last_played_at
   end
