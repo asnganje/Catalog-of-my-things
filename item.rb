@@ -28,6 +28,6 @@ class Item
   end
 
   def can_be_archived?
-    Date.today - @publish_date > 3650
+    Time.now.year - @publish_date > 10
   end
 end
