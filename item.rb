@@ -27,7 +27,7 @@ class Item
     @archieved = true if can_be_archived?
   end
 
-  private   
+  private
 
   def can_be_archived?
     Time.new.year - @publish_date > 10
