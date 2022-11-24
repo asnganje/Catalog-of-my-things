@@ -1,6 +1,6 @@
 class UserOptions
-    def self.user_options
-      options = [
+  def self.user_options
+    options = [
         '',
         '     [1] List all books',
         '     [2] List all music albums',
@@ -20,5 +20,5 @@ class UserOptions
       puts '_____________________________________________'
       puts "\nPlease choose an option by entering a number:"
       puts options
-    end
   end
+end
