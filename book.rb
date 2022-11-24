@@ -1,6 +1,5 @@
 require_relative 'item'
 
-
 class Book < Item
   attr_accessor :publisher, :cover_state, :title, :author, :genre, :label
 
@@ -18,4 +17,4 @@ class Book < Item
       false
     end
   end
-  end
+end
