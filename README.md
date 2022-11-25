@@ -2,6 +2,10 @@
 
 My group created a Ruby console app that displays a catalog of a user.
 
+## Group Video
+
+Click [here](https://drive.google.com/file/d/1LYh8Z-pm0O1N9UbLb012yPHFWLR1Dc6u/view) to watch the video.
+
 ## Built With
 
 - [x] Ruby (programming language)
