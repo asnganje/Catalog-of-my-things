@@ -1,10 +1,12 @@
-class Item
-  attr_reader :publish_date, :genre, :author, :source, :label
+require 'securerandom'
 
-  def initialize(publish_date, id = rand(1..1000))
+class Item
+  attr_reader :genre, :author, :source, :label, :publish_date, :archived, :id
+
+  def initialize(publish_date, id = SecureRandom.random_number(1000))
     @publish_date = publish_date
+    @archived = false
     @id = id
-    @archieved = false
   end
 
   def add_genre(genre)
@@ -24,12 +26,12 @@ class Item
   end
 
   def move_to_archive
-    @archieved = true if can_be_archived?
+    @archived = true if can_be_archived?
   end
 
   private
 
   def can_be_archived?
-    Time.new.year - @publish_date > 10
+    Time.new.year - publish_date > 10
   end
 end
