@@ -25,4 +25,3 @@ class Source
     end
   end
 end
-Footer
